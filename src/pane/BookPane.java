@@ -19,7 +19,7 @@ public class BookPane extends GridPane {
         setPadding(new Insets(4));
 
         ImageView iv = GetDisplay.image(book, 160);
-        add(iv, 0, 0, 0, 3);
+        add(iv, 0, 0, 1, 4);
 
         Text name = GetDisplay.name(book, 18, 250, TextAlignment.LEFT);
         add(name, 1, 0);

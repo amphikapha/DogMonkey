@@ -72,11 +72,11 @@ public class Book extends Node {
 
     public void setImageByPath(String imagePath) {
         try {
-            this.image = new Image(new FileInputStream(imagePath));
-        } catch (FileNotFoundException e1) {
+            this.image = new Image(ClassLoader.getSystemResource(imagePath).toString());
+        } catch (Exception e1) {
             try {
-                this.image = new Image(new FileInputStream("res/6.png"));
-            } catch (FileNotFoundException e2) {
+                this.image = new Image(ClassLoader.getSystemResource("6.png").toString());
+            } catch (Exception e2) {
                 this.image = null;
             }
         }

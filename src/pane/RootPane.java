@@ -18,15 +18,15 @@ public class RootPane extends VBox {
 
     private RootPane() {
         // TODO: FILL CODE HERE
-        instance.setBackground(new Background(new BackgroundFill(Color.WHITE,null, null)));
-        instance.setAlignment(Pos.TOP_CENTER);
-        instance.setSpacing(16);
-        instance.setPadding(new Insets(32, 0, 32, 0));
+        setBackground(new Background(new BackgroundFill(Color.WHITE,null, null)));
+        setAlignment(Pos.TOP_CENTER);
+        setSpacing(16);
+        setPadding(new Insets(32, 0, 32, 0));
 
         Text text = new Text("Let's Read");
         text.setFill(Color.DARKCYAN);
         text.setFont(Font.font("Verdana", FontWeight.BOLD, 32));
-        instance.getChildren().add(text);
+        getChildren().add(text);
         ///////////////////////
         Goto.setRootPane(this);
         Goto.mainPage();

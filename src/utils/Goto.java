@@ -56,21 +56,16 @@ public class Goto {
     public static void bookPage(Book book) {
         clear();
 
-        Text name = new Text();
-        name = GetDisplay.name(book, 28,336,TextAlignment.CENTER);
+        Text name = GetDisplay.name(book, 28,336,TextAlignment.CENTER);
 
-        Text author = new Text();
-        author = GetDisplay.author(book, 24, 336, TextAlignment.CENTER);
+        Text author = GetDisplay.author(book, 24, 336, TextAlignment.CENTER);
         author.setText("By " + book.getAuthor());
 
-        ImageView iv = new ImageView();
-        iv = GetDisplay.image(book, 320);
+        ImageView iv = GetDisplay.image(book, 320);
 
-        Text star = new Text();
-        star = GetDisplay.stars(book, 24);
+        Text star = GetDisplay.stars(book, 24);
 
-        Text description = new Text();
-        description = GetDisplay.Description(book, 16, 336);
+        Text description = GetDisplay.Description(book, 16, 336);
 
         rootPane.getChildren().add(backToMainPageButton());
 
