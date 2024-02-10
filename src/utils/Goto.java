@@ -1,17 +1,25 @@
 package utils;
 
 import item.Book;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
+import pane.NewBookPane;
 import pane.RootPane;
 
-import java.awt.*;
+
+
 
 public class Goto {
     private static RootPane rootPane;
-
     public static void setRootPane(RootPane rootPane) {
-        rootPane = rootPane;
+        Goto.rootPane = rootPane;
     }
 
     public static void clear() {
@@ -22,19 +30,32 @@ public class Goto {
 
     public static void mainPage() {
         clear();
-//        ScrollPane scrollPane = new ScrollPane();
-//        scrollPane.
-//        rootPane.getChildren().add();
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+
     }
 
     public static Button backToMainPageButton() {
         Button btn = new Button("Back");
-        btn.setBackground(Color.WHITE);
+        btn.setBorder(new Border(new BorderStroke(Color.DARKCYAN, BorderStrokeStyle.SOLID,null,new BorderWidths(2))));
+        btn.setBackground(new Background(new BackgroundFill(Color.WHITE, null, null)));
+        btn.setTextFill(Color.DARKCYAN);
+        btn.setPrefWidth(300);
+
+        btn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                Goto.mainPage();
+            }
+        });
+
         return btn;
     }
 
     public static void bookPage(Book book) {
         clear();
+
         Text name = new Text();
         name = GetDisplay.name(book, 28,336,TextAlignment.CENTER);
 
@@ -42,12 +63,23 @@ public class Goto {
         author = GetDisplay.author(book, 24, 336, TextAlignment.CENTER);
         author.setText("By " + book.getAuthor());
 
+        ImageView iv = new ImageView();
+        iv = GetDisplay.image(book, 320);
+
         Text star = new Text();
         star = GetDisplay.stars(book, 24);
 
         Text description = new Text();
         description = GetDisplay.Description(book, 16, 336);
 
-        //rootPane.getChildren().add(backToMainPageButton());
+        rootPane.getChildren().add(backToMainPageButton());
+
+        rootPane.getChildren().addAll(name, author, iv, star, description);
+    }
+
+    public static void addNewBookPage() {
+        clear();
+        rootPane.getChildren().add(backToMainPageButton());
+        rootPane.getChildren().add(new NewBookPane());
     }
 }

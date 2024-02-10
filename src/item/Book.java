@@ -1,11 +1,12 @@
 package item;
 
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-public class Book {
+public class Book extends Node {
     private String name;
     private String author;
     private int stars;

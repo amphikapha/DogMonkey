@@ -1,7 +1,16 @@
 package pane;
 
 import item.Book;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import utils.Goto;
+
 
 import java.util.ArrayList;
 
@@ -19,6 +28,9 @@ public class BookListPane extends VBox {
         books.add(new Book("Mercy Johndaughter and the Land of Heroes", "Nick Nornand", 4, "res/5.png", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, sem a ultricies scelerisque, eros tellus sodales sem, ut malesuada lorem leo sit amet libero. Donec vel mi posuere, rhoncus purus eget, posuere sem. Mauris vehicula tincidunt turpis, eget malesuada lectus pretium non. Aenean eu egestas erat. Aenean ex ipsum, ornare non tristique in, facilisis ac ex. Vestibulum eget elit et nunc posuere laoreet sed eget dui."));
 
         // TODO: FILL CODE HERE
+        setFillWidth(true);
+        setAlignment(Pos.CENTER);
+
     }
 
     public static BookListPane getInstance() {
@@ -33,4 +45,24 @@ public class BookListPane extends VBox {
     }
 
     // TODO: FILL CODE HERE
+    public Button newBookButton() {
+        Button btn = new Button("Add New Book");
+        btn.setPrefWidth(400);
+        btn.setBackground(new Background(new BackgroundFill(Color.DARKCYAN, null, null)));
+        btn.setTextFill(Color.WHITE);
+
+        btn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                Goto.addNewBookPage();
+            }
+        });
+
+        return btn;
+    }
+
+    public void setSearchedBooks(ArrayList<Book> searchedBooks) {
+
+
+    }
 }
