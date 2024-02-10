@@ -1,5 +1,6 @@
 package pane;
 
+import item.Book;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -12,6 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
+import java.util.ArrayList;
 
 
 public class SearchPane extends HBox {
@@ -27,12 +29,19 @@ public class SearchPane extends HBox {
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                BookListPane searchBook = BookListPane.getInstance();
+                ArrayList<Book> books = BookListPane.getInstance().getBooks();
+                //TODO
                 if (textField.getText().isBlank()) {
-
+                    BookListPane.getInstance().setSearchedBooks(books);
+                } else {
+                    books.removeIf(book -> !book.getName().contains(textField.getText()));
+                    BookListPane.getInstance().setSearchedBooks(books);
                 }
+
             }
         });
+
+        getChildren().addAll(textField, btn);
 
     }
 }

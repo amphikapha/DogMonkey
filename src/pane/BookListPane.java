@@ -30,6 +30,7 @@ public class BookListPane extends VBox {
         // TODO: FILL CODE HERE
         setFillWidth(true);
         setAlignment(Pos.CENTER);
+        setSearchedBooks(books);
 
     }
 
@@ -62,7 +63,16 @@ public class BookListPane extends VBox {
     }
 
     public void setSearchedBooks(ArrayList<Book> searchedBooks) {
-
+        BookListPane.getInstance().getChildren().clear();
+        for (int i = 0; i < searchedBooks.size(); i++) {
+            BookPane bookPane = new BookPane(searchedBooks.get(i));
+            if (i % 2 == 0) {
+                bookPane.setBackground(new Background(new BackgroundFill(Color.WHITE, null, null)));
+            } else {
+                bookPane.setBackground(new Background(new BackgroundFill(Color.color(0, 0, 0, 0.05), null, null)));
+            }
+        }
+        getInstance().getChildren().add(newBookButton());
 
     }
 }

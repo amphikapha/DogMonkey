@@ -10,10 +10,10 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
+import pane.BookListPane;
 import pane.NewBookPane;
 import pane.RootPane;
-
-
+import pane.SearchPane;
 
 
 public class Goto {
@@ -30,10 +30,10 @@ public class Goto {
 
     public static void mainPage() {
         clear();
-        ScrollPane scrollPane = new ScrollPane();
+        ScrollPane scrollPane = new ScrollPane(BookListPane.getInstance());
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-
+        rootPane.getChildren().addAll(new SearchPane(), scrollPane);
     }
 
     public static Button backToMainPageButton() {

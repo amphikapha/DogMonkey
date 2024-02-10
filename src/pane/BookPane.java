@@ -18,25 +18,17 @@ public class BookPane extends GridPane {
         setHgap(8);
         setPadding(new Insets(4));
 
-        ImageView iv = new ImageView();
-        iv = GetDisplay.image(book, 160);
-        GridPane.setColumnIndex(iv, 0);
-        GridPane.setRowSpan(iv, 4);
+        ImageView iv = GetDisplay.image(book, 160);
+        add(iv, 0, 0, 0, 3);
 
-        Text name = new Text();
-        name = GetDisplay.name(book, 18, 250, TextAlignment.LEFT);
-        GridPane.setColumnIndex(name, 1);
-        GridPane.setRowIndex(name, 0);
+        Text name = GetDisplay.name(book, 18, 250, TextAlignment.LEFT);
+        add(name, 1, 0);
 
-        Text author = new Text();
-        author = GetDisplay.author(book, 16, 250, TextAlignment.LEFT);
-        GridPane.setColumnIndex(author, 1);
-        GridPane.setRowIndex(author, 1);
+        Text author = GetDisplay.author(book, 16, 250, TextAlignment.LEFT);
+        add(author, 1, 1);
 
-        Text star = new Text();
-        star = GetDisplay.stars(book, 16);
-        GridPane.setColumnIndex(name, 1);
-        GridPane.setRowIndex(name, 3);
+        Text star = GetDisplay.stars(book, 16);
+        add(star, 1, 3);
 
         setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override

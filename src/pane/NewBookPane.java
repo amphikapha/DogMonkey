@@ -1,10 +1,12 @@
 package pane;
 
 import item.Book;
+import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -16,7 +18,12 @@ public class NewBookPane extends GridPane {
     public NewBookPane() {
         setPadding(new Insets(12));
         setVgap(8);
-
+        //--------------------------------------------------- 3
+        TextField name = input();
+        TextField author = input();
+        TextField rating = input();
+        TextField image = input();
+        TextField description = input();
 
         // -------------------------------------------------- 4
         ColumnConstraints col1 = new ColumnConstraints();
@@ -31,11 +38,31 @@ public class NewBookPane extends GridPane {
         btn.setPrefHeight(32);
         btn.setTextFill(Color.WHITE);
         btn.setBackground(new Background(new BackgroundFill(Color.DARKCYAN, null, null)));
+        btn.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                handleClick(name.getText(), author.getText(), rating.getText(), image.getText(), description.getText());
+            }
+        });
 
         // -------------------------------------------------- 6
-        getColumnConstraints().addAll(col1, col2);
+        getColumnConstraints().add(col1);
+        getColumnConstraints().add(col2);
 
-        // -------------------------------------------------- 7
+        // -------------------------------------------------- 7-17
+        add(label("Title: "), 0, 0);
+        add(label("Author: "), 0, 1);
+        add(label("Rating: "), 0, 2);
+        add(label("Image: "), 0, 3);
+        add(label("Description: "), 0, 4);
+
+        add(name, 1, 0);
+        add(author, 1, 1);
+        add(rating, 1, 2);
+        add(image, 1, 3);
+        add(description, 1, 4);
+
+        add(btn, 0, 5, 2, 1);
 
     }
 
@@ -58,7 +85,7 @@ public class NewBookPane extends GridPane {
         }
         Book book = new Book(name, author, rating, image, description);
         BookListPane.getInstance().getChildren().add(book);
-        //TODO
+        BookListPane.getInstance().setSearchedBooks(BookListPane.getInstance().getBooks());
         Goto.mainPage();
     }
 
