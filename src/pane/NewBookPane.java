@@ -75,7 +75,7 @@ public class NewBookPane extends GridPane {
     private TextField input() {
         TextField textField = new TextField();
         textField.setBackground(new Background(new BackgroundFill(Color.WHITE, new CornerRadii(16), null)));
-        textField.setBorder(new Border(new BorderStroke(Color.WHITE, BorderStrokeStyle.SOLID, new CornerRadii(16), null)));
+        textField.setBorder(new Border(new BorderStroke(Color.DARKCYAN, BorderStrokeStyle.SOLID, new CornerRadii(16), BorderWidths.DEFAULT)));
         return textField;
     }
 
