@@ -12,6 +12,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import utils.Goto;
 
 import java.util.ArrayList;
 
@@ -29,13 +30,15 @@ public class SearchPane extends HBox {
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                ArrayList<Book> books = BookListPane.getInstance().getBooks();
-                //TODO
+               // TODO
+                BookListPane books = BookListPane.getInstance();
                 if (textField.getText().isBlank()) {
-                    BookListPane.getInstance().setSearchedBooks(books);
+                    books.setSearchedBooks(books.getBooks());
+                    return;
                 } else {
-                    books.removeIf(book -> !book.getName().contains(textField.getText()));
-                    BookListPane.getInstance().setSearchedBooks(books);
+                    ArrayList<Book> bookss = new ArrayList<>(books.getBooks());
+                    bookss.removeIf(book -> !book.getName().contains(textField.getText()));
+                    BookListPane.getInstance().setSearchedBooks(bookss);
                 }
 
             }

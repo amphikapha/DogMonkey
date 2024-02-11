@@ -84,7 +84,7 @@ public class NewBookPane extends GridPane {
             return;
         }
         Book book = new Book(name, author, rating, image, description);
-        BookListPane.getInstance().getChildren().add(book);
+        BookListPane.getInstance().getBooks().add(book);
         BookListPane.getInstance().setSearchedBooks(BookListPane.getInstance().getBooks());
         Goto.mainPage();
     }
