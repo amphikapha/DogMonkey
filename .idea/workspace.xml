@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Progmeth_Lab5_2023_2_6633287021_Amphikapha:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71c6d8b8-ea65-451f-9822-a0087a8ea131" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea1/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progmeth_Lab5_2023_2_6633287021_Amphikapha.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Progmeth_Lab5_2023_2_6633287021_Amphikapha.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pane/BookListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/BookListPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pane/NewBookPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/NewBookPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pane/SearchPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/SearchPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Progmeth_Lab5_2023_2_6633287021_Amphikapha_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +33,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JAR Application.Progmeth_Lab5_2023_2_6633287021.jar.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Amphi/IdeaProjects/Progmeth_Lab5_2023_2_6633287021_Amphikapha/res",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Amphi\IdeaProjects\Progmeth_Lab5_2023_2_6633287021_Amphikapha" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.Progmeth_Lab5_2023_2_6633287021.jar">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="application.Main" />
       <module name="Progmeth_Lab5_2023_2_6633287021_Amphikapha" />
@@ -55,6 +59,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Progmeth_Lab5_2023_2_6633287021.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Progmeth_Lab5_2023_2_6633287021.jar" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Progmeth_Lab5_2023_2_6633287021.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Progmeth_Lab5_2023_2_6633287021.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
