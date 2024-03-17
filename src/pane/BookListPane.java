@@ -9,7 +9,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import utils.Goto;
+import controller.Goto;
 
 
 import java.util.ArrayList;

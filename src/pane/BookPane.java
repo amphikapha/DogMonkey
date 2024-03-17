@@ -8,8 +8,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
-import utils.GetDisplay;
-import utils.Goto;
+import controller.GetDisplay;
+import controller.Goto;
 
 
 public class BookPane extends GridPane {

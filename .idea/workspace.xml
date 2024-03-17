@@ -10,8 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71c6d8b8-ea65-451f-9822-a0087a8ea131" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dog/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/CorgiDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/HighDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/LowDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/PoodieDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/RottDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/SamoyDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/monkey/Monkey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/monkey/UgaMonkey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Damagable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dog/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dog/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pane/BookListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/BookListPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pane/BookPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/BookPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pane/NewBookPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/NewBookPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pane/RootPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/RootPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pane/SearchPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pane/SearchPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GetDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/GetDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Goto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Goto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

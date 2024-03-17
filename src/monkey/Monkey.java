@@ -1,9 +1,9 @@
-package dog;
+package monkey;
 
-public abstract class Dog {
+public abstract class Monkey {
     private int hp;
 
-    public Dog(int hp) {
+    public Monkey(int hp) {
         if (hp < 0) {
             hp = 0;
         }
@@ -25,8 +25,6 @@ public abstract class Dog {
             this.hp -= amount;
         }
     }
-
-    public abstract void bark();
 
     public int getHp() {
         return hp;

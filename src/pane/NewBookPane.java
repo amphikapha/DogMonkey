@@ -11,7 +11,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import utils.Goto;
+import controller.Goto;
 
 
 public class NewBookPane extends GridPane {
