@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71c6d8b8-ea65-451f-9822-a0087a8ea131" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Progmeth_Lab5_2023_2_6633287021_Amphikapha_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dog/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,13 +18,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2cDFgsQruaq35RORdu5XCDRiUbk" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -39,10 +45,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Amphi/IdeaProjects/Progmeth_Lab5_2023_2_6633287021_Amphikapha/res",
+    "last_opened_file_path": "C:/Users/Amphi/Downloads/DogMonk",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RecentsManager">
